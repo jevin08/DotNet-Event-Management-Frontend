@@ -1,0 +1,27 @@
+.myForm{
+    display: block;
+    width: 50%;
+    padding: 1rem;
+    position: absolute;
+    left: 25%;
+    margin-top: 6rem;
+    transform: translateY(-3rem);
+}
+@media (max-width: 700px) {
+    .myForm{
+        width: 60%;
+        left: 20%;
+    }
+}
+@media (max-width: 600px) {
+    .myForm{
+        width: 70%;
+        left: 15%;
+    }
+}
+@media (max-width: 400px) {
+    .myForm{
+        width: 80%;
+        left: 10%;
+    }
+}

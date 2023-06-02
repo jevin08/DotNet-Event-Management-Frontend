@@ -1,0 +1,56 @@
+main:has(>div.app-background) {
+    padding: 0;
+    padding-left: 0% !important;
+}
+
+.app-background {
+    /* body{ */
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/005/069/142/non_2x/illustration-background-wallpaper-banner-template-flyer-poster-event-label-backdrop-modern-vector.jpg');
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    background-attachment: fixed;
+    width: calc(100%+20px);
+    height: 100vh;
+}
+
+@-moz-document url-prefix() {
+    .app-background {
+        width: 135%;
+        transform: translateX(-25%);
+    }
+
+    .loginForm {}
+}
+
+.loginForm {
+    padding: 1rem;
+    background-color: rgba(83, 93, 60, 0.7);
+    margin-top: 6rem;
+    margin-left: 50%;
+    height: 22rem;
+    border: 1px solid #e4f623ce !important;
+    transform: translateX(-50%);
+}
+
+.loginForm div button {
+    background-color: #bece0ece !important;
+    color: #fffefe !important;
+    font-size: 1.2rem;
+}
+
+.loginForm .form-group label,
+.loginForm .form-group small,
+.loginForm h2 {
+    color: #fffaf5;
+}
+
+
+@keyframes loadingRotate {
+    to {
+        transform: rotateZ(-360deg);
+    }
+}
